@@ -38,12 +38,13 @@
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
     {{#each projects}}
-      <div class="project" id="{{id}}">
+    	{{> thumbnail}}
+      <!--div class="project" id="{{id}}">
         <a href="project/{{name}}" class="thumbnail">
           <img src="images/{{image}}" ... />
           <p>{{name}}</p>
         </a>
-      </div>
+      </div-->
     {{/each}}
 	</div>
 
